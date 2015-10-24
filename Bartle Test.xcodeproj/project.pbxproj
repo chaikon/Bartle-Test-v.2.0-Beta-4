@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D1AD0E018E0261600290E88 /* SocIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1AD0DC18E0261600290E88 /* SocIcon.png */; };
+		6D1AD0E118E0261600290E88 /* Kill.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1AD0DD18E0261600290E88 /* Kill.png */; };
+		6D1AD0E218E0261600290E88 /* ExploreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1AD0DE18E0261600290E88 /* ExploreIcon.png */; };
+		6D1AD0E318E0261600290E88 /* Achieve icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1AD0DF18E0261600290E88 /* Achieve icon.png */; };
+		6D1AD0E518E0F43300290E88 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1AD0E418E0F43300290E88 /* blank.png */; };
+		6D4DA926188B8BCF00B9DE23 /* Preview of “Untitled 10” copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4DA925188B8BCE00B9DE23 /* Preview of “Untitled 10” copy.png */; };
+		6D8557CE18F4E084005621C1 /* iPadMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8557CD18F4E084005621C1 /* iPadMain.storyboard */; };
+		6DA9669919370528001EA173 /* 8-Bit Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9669819370528001EA173 /* 8-Bit Black.png */; };
+		6DB943A718383F7A0075EF6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB943A618383F7A0075EF6C /* Foundation.framework */; };
+		6DB943A918383F7A0075EF6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB943A818383F7A0075EF6C /* CoreGraphics.framework */; };
+		6DB943AB18383F7A0075EF6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB943AA18383F7A0075EF6C /* UIKit.framework */; };
+		6DB943B118383F7A0075EF6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DB943AF18383F7A0075EF6C /* InfoPlist.strings */; };
+		6DB943B318383F7B0075EF6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB943B218383F7B0075EF6C /* main.m */; };
+		6DB943B718383F7B0075EF6C /* bartleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB943B618383F7B0075EF6C /* bartleAppDelegate.m */; };
+		6DB943BA18383F7B0075EF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB943B818383F7B0075EF6C /* Main.storyboard */; };
+		6DB943BD18383F7B0075EF6C /* bartleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB943BC18383F7B0075EF6C /* bartleViewController.m */; };
+		6DB943BF18383F7B0075EF6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB943BE18383F7B0075EF6C /* Images.xcassets */; };
+		6DB943C618383F7B0075EF6C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB943C518383F7B0075EF6C /* XCTest.framework */; };
+		6DB943C718383F7B0075EF6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB943A618383F7A0075EF6C /* Foundation.framework */; };
+		6DB943C818383F7B0075EF6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB943AA18383F7A0075EF6C /* UIKit.framework */; };
+		6DB943D018383F7B0075EF6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DB943CE18383F7B0075EF6C /* InfoPlist.strings */; };
+		6DB943D218383F7B0075EF6C /* Bartle_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB943D118383F7B0075EF6C /* Bartle_TestTests.m */; };
+		6DB943DD183846AF0075EF6C /* bartleQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB943DC183846AF0075EF6C /* bartleQuestion.m */; };
+		CD219B1E1BA3FFC600711E14 /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = CD219B1D1BA3FFC600711E14 /* view.m */; };
+		CD69310B197F241300B8EDED /* socializer cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = CD69310A197F241300B8EDED /* socializer cropped.png */; };
+		CD69310D197F284800B8EDED /* initialSplash cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = CD69310C197F284800B8EDED /* initialSplash cropped.png */; };
+		CD714EBF1A57C5110030D116 /* blanklaunchimgip5.png in Resources */ = {isa = PBXBuildFile; fileRef = CD714EBE1A57C5110030D116 /* blanklaunchimgip5.png */; };
+		CDB031E2198219A000EEA82D /* bartleHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB031E1198219A000EEA82D /* bartleHomeViewController.m */; };
+		CDD32FA41999F5450024CF6E /* acheiver cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD32FA31999F5450024CF6E /* acheiver cropped.png */; };
+		CDE1C885199D1CA8003F80B5 /* explorer cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE1C883199D1CA8003F80B5 /* explorer cropped.png */; };
+		CDE1C886199D1CA8003F80B5 /* killer cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE1C884199D1CA8003F80B5 /* killer cropped.png */; };
+		DC8D8AFD1A6614AC002A01CA /* sqaureexplorer.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8D8AF91A6614AC002A01CA /* sqaureexplorer.png */; };
+		DC8D8AFE1A6614AC002A01CA /* square socializer.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8D8AFA1A6614AC002A01CA /* square socializer.png */; };
+		DC8D8AFF1A6614AC002A01CA /* squareacheiver.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8D8AFB1A6614AC002A01CA /* squareacheiver.png */; };
+		DC8D8B001A6614AC002A01CA /* squrekiller.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8D8AFC1A6614AC002A01CA /* squrekiller.png */; };
+		DC8D8B051A66193B002A01CA /* croppedacheiver small.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8D8B011A66193B002A01CA /* croppedacheiver small.png */; };
+		DC8D8B061A66193B002A01CA /* croppedexplorer small.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8D8B021A66193B002A01CA /* croppedexplorer small.png */; };
+		DC8D8B071A66193B002A01CA /* croppedkiller small.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8D8B031A66193B002A01CA /* croppedkiller small.png */; };
+		DC8D8B081A66193B002A01CA /* croppedsocializer small.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8D8B041A66193B002A01CA /* croppedsocializer small.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DB943C918383F7B0075EF6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9439B18383F7A0075EF6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB943A218383F7A0075EF6C;
+			remoteInfo = "Bartle Test";
+		};
+		CD714EC01A57C6270030D116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9439B18383F7A0075EF6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB943A218383F7A0075EF6C;
+			remoteInfo = "Bartle Test";
+		};
+		CDFC8FAC1A556F4D00E21F1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9439B18383F7A0075EF6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB943A218383F7A0075EF6C;
+			remoteInfo = "Bartle Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D1AD0DC18E0261600290E88 /* SocIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SocIcon.png; sourceTree = "<group>"; };
+		6D1AD0DD18E0261600290E88 /* Kill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kill.png; sourceTree = "<group>"; };
+		6D1AD0DE18E0261600290E88 /* ExploreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExploreIcon.png; sourceTree = "<group>"; };
+		6D1AD0DF18E0261600290E88 /* Achieve icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Achieve icon.png"; sourceTree = "<group>"; };
+		6D1AD0E418E0F43300290E88 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		6D4DA925188B8BCE00B9DE23 /* Preview of “Untitled 10” copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Preview of “Untitled 10” copy.png"; path = "Bartle TestTests/Preview of “Untitled 10” copy.png"; sourceTree = SOURCE_ROOT; };
+		6D8557CD18F4E084005621C1 /* iPadMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadMain.storyboard; sourceTree = "<group>"; };
+		6DA9669819370528001EA173 /* 8-Bit Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-Bit Black.png"; sourceTree = "<group>"; };
+		6DB943A318383F7A0075EF6C /* Bartle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bartle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB943A618383F7A0075EF6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DB943A818383F7A0075EF6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6DB943AA18383F7A0075EF6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6DB943AE18383F7A0075EF6C /* Bartle Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bartle Test-Info.plist"; sourceTree = "<group>"; };
+		6DB943B018383F7A0075EF6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6DB943B218383F7B0075EF6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DB943B418383F7B0075EF6C /* Bartle Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bartle Test-Prefix.pch"; sourceTree = "<group>"; };
+		6DB943B518383F7B0075EF6C /* bartleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bartleAppDelegate.h; sourceTree = "<group>"; };
+		6DB943B618383F7B0075EF6C /* bartleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bartleAppDelegate.m; sourceTree = "<group>"; };
+		6DB943B918383F7B0075EF6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DB943BB18383F7B0075EF6C /* bartleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bartleViewController.h; sourceTree = "<group>"; };
+		6DB943BC18383F7B0075EF6C /* bartleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bartleViewController.m; sourceTree = "<group>"; };
+		6DB943BE18383F7B0075EF6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6DB943C418383F7B0075EF6C /* Bartle TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bartle TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB943C518383F7B0075EF6C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6DB943CD18383F7B0075EF6C /* Bartle TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bartle TestTests-Info.plist"; sourceTree = "<group>"; };
+		6DB943CF18383F7B0075EF6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6DB943D118383F7B0075EF6C /* Bartle_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bartle_TestTests.m; sourceTree = "<group>"; };
+		6DB943DB183846AF0075EF6C /* bartleQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bartleQuestion.h; sourceTree = "<group>"; };
+		6DB943DC183846AF0075EF6C /* bartleQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bartleQuestion.m; sourceTree = "<group>"; };
+		CD219B1C1BA3FFC600711E14 /* view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
+		CD219B1D1BA3FFC600711E14 /* view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
+		CD69310A197F241300B8EDED /* socializer cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socializer cropped.png"; sourceTree = "<group>"; };
+		CD69310C197F284800B8EDED /* initialSplash cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "initialSplash cropped.png"; sourceTree = "<group>"; };
+		CD714EBE1A57C5110030D116 /* blanklaunchimgip5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blanklaunchimgip5.png; sourceTree = "<group>"; };
+		CDB031E0198219A000EEA82D /* bartleHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bartleHomeViewController.h; path = ../bartleHomeViewController.h; sourceTree = "<group>"; };
+		CDB031E1198219A000EEA82D /* bartleHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bartleHomeViewController.m; path = ../bartleHomeViewController.m; sourceTree = "<group>"; };
+		CDD32FA31999F5450024CF6E /* acheiver cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "acheiver cropped.png"; sourceTree = "<group>"; };
+		CDE1C883199D1CA8003F80B5 /* explorer cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explorer cropped.png"; sourceTree = "<group>"; };
+		CDE1C884199D1CA8003F80B5 /* killer cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "killer cropped.png"; sourceTree = "<group>"; };
+		DC8D8AF91A6614AC002A01CA /* sqaureexplorer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sqaureexplorer.png; sourceTree = "<group>"; };
+		DC8D8AFA1A6614AC002A01CA /* square socializer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square socializer.png"; sourceTree = "<group>"; };
+		DC8D8AFB1A6614AC002A01CA /* squareacheiver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareacheiver.png; sourceTree = "<group>"; };
+		DC8D8AFC1A6614AC002A01CA /* squrekiller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squrekiller.png; sourceTree = "<group>"; };
+		DC8D8B011A66193B002A01CA /* croppedacheiver small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "croppedacheiver small.png"; sourceTree = "<group>"; };
+		DC8D8B021A66193B002A01CA /* croppedexplorer small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "croppedexplorer small.png"; sourceTree = "<group>"; };
+		DC8D8B031A66193B002A01CA /* croppedkiller small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "croppedkiller small.png"; sourceTree = "<group>"; };
+		DC8D8B041A66193B002A01CA /* croppedsocializer small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "croppedsocializer small.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DB943A018383F7A0075EF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB943A918383F7A0075EF6C /* CoreGraphics.framework in Frameworks */,
+				6DB943AB18383F7A0075EF6C /* UIKit.framework in Frameworks */,
+				6DB943A718383F7A0075EF6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB943C118383F7B0075EF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB943C618383F7B0075EF6C /* XCTest.framework in Frameworks */,
+				6DB943C818383F7B0075EF6C /* UIKit.framework in Frameworks */,
+				6DB943C718383F7B0075EF6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DA43357190BCCEA00AF1FFE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		6DB9439A18383F7A0075EF6C = {
+			isa = PBXGroup;
+			children = (
+				6DB943AC18383F7A0075EF6C /* Bartle Test */,
+				6DB943CB18383F7B0075EF6C /* Bartle TestTests */,
+				6DB943A518383F7A0075EF6C /* Frameworks */,
+				6DB943A418383F7A0075EF6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DB943A418383F7A0075EF6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DB943A318383F7A0075EF6C /* Bartle Test.app */,
+				6DB943C418383F7B0075EF6C /* Bartle TestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DB943A518383F7A0075EF6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DB943A618383F7A0075EF6C /* Foundation.framework */,
+				6DB943A818383F7A0075EF6C /* CoreGraphics.framework */,
+				6DB943AA18383F7A0075EF6C /* UIKit.framework */,
+				6DB943C518383F7B0075EF6C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DB943AC18383F7A0075EF6C /* Bartle Test */ = {
+			isa = PBXGroup;
+			children = (
+				6DA43357190BCCEA00AF1FFE /* iPad */,
+				6D1AD0E418E0F43300290E88 /* blank.png */,
+				6D1AD0DC18E0261600290E88 /* SocIcon.png */,
+				6D1AD0DD18E0261600290E88 /* Kill.png */,
+				6D1AD0DE18E0261600290E88 /* ExploreIcon.png */,
+				6D1AD0DF18E0261600290E88 /* Achieve icon.png */,
+				6DB943B518383F7B0075EF6C /* bartleAppDelegate.h */,
+				6DB943B618383F7B0075EF6C /* bartleAppDelegate.m */,
+				6DB943B818383F7B0075EF6C /* Main.storyboard */,
+				CD219B1C1BA3FFC600711E14 /* view.h */,
+				CD219B1D1BA3FFC600711E14 /* view.m */,
+				6D8557CD18F4E084005621C1 /* iPadMain.storyboard */,
+				6DB943DB183846AF0075EF6C /* bartleQuestion.h */,
+				6DB943DC183846AF0075EF6C /* bartleQuestion.m */,
+				6DB943BB18383F7B0075EF6C /* bartleViewController.h */,
+				6DB943BC18383F7B0075EF6C /* bartleViewController.m */,
+				CDB031E0198219A000EEA82D /* bartleHomeViewController.h */,
+				CDB031E1198219A000EEA82D /* bartleHomeViewController.m */,
+				6DA9669819370528001EA173 /* 8-Bit Black.png */,
+				CD69310C197F284800B8EDED /* initialSplash cropped.png */,
+				CD69310A197F241300B8EDED /* socializer cropped.png */,
+				CDD32FA31999F5450024CF6E /* acheiver cropped.png */,
+				CDE1C883199D1CA8003F80B5 /* explorer cropped.png */,
+				CDE1C884199D1CA8003F80B5 /* killer cropped.png */,
+				CD714EBE1A57C5110030D116 /* blanklaunchimgip5.png */,
+				DC8D8AF91A6614AC002A01CA /* sqaureexplorer.png */,
+				DC8D8AFA1A6614AC002A01CA /* square socializer.png */,
+				DC8D8AFB1A6614AC002A01CA /* squareacheiver.png */,
+				DC8D8AFC1A6614AC002A01CA /* squrekiller.png */,
+				DC8D8B011A66193B002A01CA /* croppedacheiver small.png */,
+				DC8D8B021A66193B002A01CA /* croppedexplorer small.png */,
+				DC8D8B031A66193B002A01CA /* croppedkiller small.png */,
+				DC8D8B041A66193B002A01CA /* croppedsocializer small.png */,
+				6DB943BE18383F7B0075EF6C /* Images.xcassets */,
+				6DB943AD18383F7A0075EF6C /* Supporting Files */,
+			);
+			path = "Bartle Test";
+			sourceTree = "<group>";
+		};
+		6DB943AD18383F7A0075EF6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D4DA925188B8BCE00B9DE23 /* Preview of “Untitled 10” copy.png */,
+				6DB943AE18383F7A0075EF6C /* Bartle Test-Info.plist */,
+				6DB943AF18383F7A0075EF6C /* InfoPlist.strings */,
+				6DB943B218383F7B0075EF6C /* main.m */,
+				6DB943B418383F7B0075EF6C /* Bartle Test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DB943CB18383F7B0075EF6C /* Bartle TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DB943CD18383F7B0075EF6C /* Bartle TestTests-Info.plist */,
+				6DB943D118383F7B0075EF6C /* Bartle_TestTests.m */,
+				6DB943CC18383F7B0075EF6C /* Supporting Files */,
+			);
+			path = "Bartle TestTests";
+			sourceTree = "<group>";
+		};
+		6DB943CC18383F7B0075EF6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DB943CE18383F7B0075EF6C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DB943A218383F7A0075EF6C /* Bartle Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB943D518383F7B0075EF6C /* Build configuration list for PBXNativeTarget "Bartle Test" */;
+			buildPhases = (
+				6DB9439F18383F7A0075EF6C /* Sources */,
+				6DB943A018383F7A0075EF6C /* Frameworks */,
+				6DB943A118383F7A0075EF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bartle Test";
+			productName = "Bartle Test";
+			productReference = 6DB943A318383F7A0075EF6C /* Bartle Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DB943C318383F7B0075EF6C /* Bartle TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB943D818383F7B0075EF6C /* Build configuration list for PBXNativeTarget "Bartle TestTests" */;
+			buildPhases = (
+				6DB943C018383F7B0075EF6C /* Sources */,
+				6DB943C118383F7B0075EF6C /* Frameworks */,
+				6DB943C218383F7B0075EF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DB943CA18383F7B0075EF6C /* PBXTargetDependency */,
+				CDFC8FAD1A556F4D00E21F1B /* PBXTargetDependency */,
+				CD714EC11A57C6270030D116 /* PBXTargetDependency */,
+			);
+			name = "Bartle TestTests";
+			productName = "Bartle TestTests";
+			productReference = 6DB943C418383F7B0075EF6C /* Bartle TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB9439B18383F7A0075EF6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = bartle;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Punahou School";
+				TargetAttributes = {
+					6DB943A218383F7A0075EF6C = {
+						DevelopmentTeam = D7NCQUHKBD;
+					};
+					6DB943C318383F7B0075EF6C = {
+						TestTargetID = 6DB943A218383F7A0075EF6C;
+					};
+				};
+			};
+			buildConfigurationList = 6DB9439E18383F7A0075EF6C /* Build configuration list for PBXProject "Bartle Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DB9439A18383F7A0075EF6C;
+			productRefGroup = 6DB943A418383F7A0075EF6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DB943A218383F7A0075EF6C /* Bartle Test */,
+				6DB943C318383F7B0075EF6C /* Bartle TestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DB943A118383F7A0075EF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8D8B051A66193B002A01CA /* croppedacheiver small.png in Resources */,
+				6DB943BF18383F7B0075EF6C /* Images.xcassets in Resources */,
+				6D1AD0E318E0261600290E88 /* Achieve icon.png in Resources */,
+				DC8D8AFD1A6614AC002A01CA /* sqaureexplorer.png in Resources */,
+				DC8D8AFF1A6614AC002A01CA /* squareacheiver.png in Resources */,
+				6D8557CE18F4E084005621C1 /* iPadMain.storyboard in Resources */,
+				CD69310D197F284800B8EDED /* initialSplash cropped.png in Resources */,
+				CD69310B197F241300B8EDED /* socializer cropped.png in Resources */,
+				DC8D8AFE1A6614AC002A01CA /* square socializer.png in Resources */,
+				6DB943B118383F7A0075EF6C /* InfoPlist.strings in Resources */,
+				CD714EBF1A57C5110030D116 /* blanklaunchimgip5.png in Resources */,
+				6D1AD0E218E0261600290E88 /* ExploreIcon.png in Resources */,
+				DC8D8B001A6614AC002A01CA /* squrekiller.png in Resources */,
+				6DA9669919370528001EA173 /* 8-Bit Black.png in Resources */,
+				6D1AD0E518E0F43300290E88 /* blank.png in Resources */,
+				CDE1C886199D1CA8003F80B5 /* killer cropped.png in Resources */,
+				CDD32FA41999F5450024CF6E /* acheiver cropped.png in Resources */,
+				6D1AD0E118E0261600290E88 /* Kill.png in Resources */,
+				DC8D8B061A66193B002A01CA /* croppedexplorer small.png in Resources */,
+				DC8D8B081A66193B002A01CA /* croppedsocializer small.png in Resources */,
+				CDE1C885199D1CA8003F80B5 /* explorer cropped.png in Resources */,
+				6D1AD0E018E0261600290E88 /* SocIcon.png in Resources */,
+				DC8D8B071A66193B002A01CA /* croppedkiller small.png in Resources */,
+				6DB943BA18383F7B0075EF6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB943C218383F7B0075EF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB943D018383F7B0075EF6C /* InfoPlist.strings in Resources */,
+				6D4DA926188B8BCF00B9DE23 /* Preview of “Untitled 10” copy.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DB9439F18383F7A0075EF6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB943B718383F7B0075EF6C /* bartleAppDelegate.m in Sources */,
+				6DB943DD183846AF0075EF6C /* bartleQuestion.m in Sources */,
+				CDB031E2198219A000EEA82D /* bartleHomeViewController.m in Sources */,
+				6DB943BD18383F7B0075EF6C /* bartleViewController.m in Sources */,
+				CD219B1E1BA3FFC600711E14 /* view.m in Sources */,
+				6DB943B318383F7B0075EF6C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB943C018383F7B0075EF6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB943D218383F7B0075EF6C /* Bartle_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DB943CA18383F7B0075EF6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DB943A218383F7A0075EF6C /* Bartle Test */;
+			targetProxy = 6DB943C918383F7B0075EF6C /* PBXContainerItemProxy */;
+		};
+		CD714EC11A57C6270030D116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DB943A218383F7A0075EF6C /* Bartle Test */;
+			targetProxy = CD714EC01A57C6270030D116 /* PBXContainerItemProxy */;
+		};
+		CDFC8FAD1A556F4D00E21F1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DB943A218383F7A0075EF6C /* Bartle Test */;
+			targetProxy = CDFC8FAC1A556F4D00E21F1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DB943AF18383F7A0075EF6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB943B018383F7A0075EF6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6DB943B818383F7B0075EF6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB943B918383F7B0075EF6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DB943CE18383F7B0075EF6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB943CF18383F7B0075EF6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DB943D318383F7B0075EF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DB943D418383F7B0075EF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DB943D618383F7B0075EF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-4";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bartle Test/Bartle Test-Prefix.pch";
+				INFOPLIST_FILE = "Bartle Test/Bartle Test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6DB943D718383F7B0075EF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-4";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bartle Test/Bartle Test-Prefix.pch";
+				INFOPLIST_FILE = "Bartle Test/Bartle Test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6DB943D918383F7B0075EF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bartle Test.app/Bartle Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bartle Test/Bartle Test-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bartle TestTests/Bartle TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6DB943DA18383F7B0075EF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bartle Test.app/Bartle Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bartle Test/Bartle Test-Prefix.pch";
+				INFOPLIST_FILE = "Bartle TestTests/Bartle TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DB9439E18383F7A0075EF6C /* Build configuration list for PBXProject "Bartle Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB943D318383F7B0075EF6C /* Debug */,
+				6DB943D418383F7B0075EF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB943D518383F7B0075EF6C /* Build configuration list for PBXNativeTarget "Bartle Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB943D618383F7B0075EF6C /* Debug */,
+				6DB943D718383F7B0075EF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB943D818383F7B0075EF6C /* Build configuration list for PBXNativeTarget "Bartle TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB943D918383F7B0075EF6C /* Debug */,
+				6DB943DA18383F7B0075EF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB9439B18383F7A0075EF6C /* Project object */;
+}

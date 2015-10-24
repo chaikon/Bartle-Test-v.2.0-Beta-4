@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2XP-KR-hxe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="5100" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-UltraLight</string>
+            <string>HelveticaNeue-UltraLight</string>
+            <string>HelveticaNeue-UltraLight</string>
+            <string>HelveticaNeue-UltraLight</string>
+            <string>HelveticaNeue-UltraLight</string>
+            <string>HelveticaNeue-UltraLight</string>
+            <string>HelveticaNeue-Thin</string>
+            <string>HelveticaNeue-UltraLight</string>
+            <string>HelveticaNeue-Thin</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="R5O-6K-Qzl">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="2XP-KR-hxe" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wIj-wg-yQh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JJr-jo-zsJ" kind="relationship" relationship="rootViewController" id="Xs6-9S-fpG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0R-uF-PNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1022" y="-243"/>
+        </scene>
+        <!--Bartle Home View Controller-->
+        <scene sceneID="C0Y-uZ-ibR">
+            <objects>
+                <viewController id="JJr-jo-zsJ" customClass="bartleHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KEf-1O-vKk"/>
+                        <viewControllerLayoutGuide type="bottom" id="siz-Jo-o3T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ui9-9g-HGb">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elt-3x-ElX">
+                                <rect key="frame" x="-106" y="529" width="144" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rQs-oY-BWQ" kind="modal" id="0fu-z1-qG0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Bartle Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="379" translatesAutoresizingMaskIntoConstraints="NO" id="Wr4-AP-fe9">
+                                <rect key="frame" x="92" y="141" width="836" height="201"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="75"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTr-qc-Vpt">
+                                <rect key="frame" x="512" y="508" width="219" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="About the Bartle Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SRP-bm-MYX" kind="modal" id="wcX-ZW-V0Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dG8-Vd-6g1">
+                                <rect key="frame" x="0.0" y="701" width="1024" height="67"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <state key="normal">
+                                    <string key="title">Original Test by Erwin Andreasen and Brandon Downey, iOS App Created By Alexander Chai - Tap Here for More Info
+iOS App Developed by Alexander Chai. Tap here for more infoTap Here </string>
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9iC-aB-ySO" kind="modal" id="fDS-6g-nKl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square socializer.png" translatesAutoresizingMaskIntoConstraints="NO" id="KAv-se-wsc">
+                                <rect key="frame" x="408" y="334" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareacheiver.png" translatesAutoresizingMaskIntoConstraints="NO" id="DZd-ET-lL3">
+                                <rect key="frame" x="516" y="334" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sqaureexplorer.png" translatesAutoresizingMaskIntoConstraints="NO" id="w5L-5Q-2rz">
+                                <rect key="frame" x="300" y="334" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squrekiller.png" translatesAutoresizingMaskIntoConstraints="NO" id="YLK-uM-5Jb">
+                                <rect key="frame" x="624" y="334" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmh-4F-EPw">
+                                <rect key="frame" x="300" y="508" width="144" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Take The Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeQuiz:" destination="JJr-jo-zsJ" eventType="touchUpInside" id="P4y-ga-oUk"/>
+                                    <segue destination="A9p-vX-ICt" kind="modal" id="3FQ-uy-jub"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hZP-Sv-vrU"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="taketheQuizButton" destination="Lmh-4F-EPw" id="Ivd-aJ-ihk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7d-hc-3XU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="-209"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="eM3-6A-jWm">
+            <objects>
+                <viewController id="9iC-aB-ySO" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4cE-6M-8eO"/>
+                        <viewControllerLayoutGuide type="bottom" id="hUN-JD-y7B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P86-5t-gID">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbO-8Y-VHc">
+                                <rect key="frame" x="653" y="930" width="44" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="9iC-aB-ySO" eventType="touchUpInside" id="4xm-Ws-UB9"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1e-KH-IIL">
+                                <rect key="frame" x="169" y="160" width="687" height="346"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Version 1.0 of the Bartle Test app was created by Alexander Chai based on classroom usage of the Bartle Test by Douglas Kiang at Punahou School in Honolulu, Hawaii. Special thanks to Amanda N, Zach K, and Bri H, for beta testing. Original test and questions by Erwin Andreasen and Brandon Downey. For more information on the app or the test, contact Douglas Kiang (@dkiang on Twitter)."</string>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4g-Lo-FAP">
+                                <rect key="frame" x="169" y="448" width="195" height="195"/>
+                                <state key="normal" backgroundImage="8-Bit Black.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushToSafari" destination="9iC-aB-ySO" eventType="touchUpInside" id="d5C-Zu-1AL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae9-Bz-OTx">
+                                <rect key="frame" x="785" y="602" width="71" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="9iC-aB-ySO" eventType="touchUpInside" id="8zI-Ze-oxI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ruO-Fy-HGs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PF-ya-DF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592" y="1723"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qYB-1j-AF0">
+            <objects>
+                <viewController id="SRP-bm-MYX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RQL-t5-gEV"/>
+                        <viewControllerLayoutGuide type="bottom" id="xsT-NY-9dZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C9b-wJ-57I">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About the Bartle Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUj-Ds-8SL">
+                                <rect key="frame" x="102" y="103" width="497" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="43"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcg-Q4-NhT">
+                                <rect key="frame" x="877" y="681" width="83" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VUq-8S-6vQ" kind="unwind" unwindAction="goHome:" id="eCN-sD-F3D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="309" translatesAutoresizingMaskIntoConstraints="NO" id="Ch9-jW-QJN">
+                                <rect key="frame" x="102" y="155" width="821" height="518"/>
+                                <string key="text">The Bartle Test of Gamer Psychology is an online multiple choice test. On one of the first days of class, I ask my students to take the Bartle Test online, and report their results to me on a Google Form. It takes about twenty minutes. Based on the students’ answers, it assigns a weight in four separate categories: Socializer, Achiever, Explorer, or Greifer. Students will often be a mixture of more than one category, although most of the weight will usually be in one category. I use these results to inform how I make groups and how I ask kids to collaborate. The test is based on how students play games. It offers useful insight into how students will react in different situations, and also provides a starting point for me at the beginning of the semester. Try it yourself, and see what insights it gives you into how best to engage your students.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.79600959095528456" green="0.79600959095528456" blue="0.79600959095528456" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLK-B1-IDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VUq-8S-6vQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1403" y="-596"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="a54-Im-y9H">
+            <objects>
+                <viewController id="A9p-vX-ICt" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jFa-fR-vbj"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBv-nL-eYv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7cY-1W-NHh">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXU-wA-6XO">
+                                <rect key="frame" x="0.0" y="213.5" width="1024" height="387.5"/>
+                                <color key="backgroundColor" red="0.86148389800000003" green="0.86722141399999997" blue="0.88443396230000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" preferredMaxLayoutWidth="879" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-YN-qwc">
+                                <rect key="frame" x="73" y="60" width="879" height="114"/>
+                                <string key="text">Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68T-yp-SQS">
+                                <rect key="frame" x="0.0" y="214" width="1024" height="193"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select1:" destination="A9p-vX-ICt" eventType="touchUpInside" id="JbQ-vv-KB6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y66-0v-gJ9">
+                                <rect key="frame" x="0.0" y="407.5" width="1024" height="193"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select2:" destination="A9p-vX-ICt" eventType="touchUpInside" id="tng-nT-IlM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="879" translatesAutoresizingMaskIntoConstraints="NO" id="W8D-kP-rj7">
+                                <rect key="frame" x="73" y="259" width="879" height="104"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="879" translatesAutoresizingMaskIntoConstraints="NO" id="FsA-bW-kec">
+                                <rect key="frame" x="73" y="452" width="879" height="104"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMC-jd-SMS">
+                                <rect key="frame" x="73" y="666" width="91" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="45"/>
+                                <state key="normal">
+                                    <string key="title">←
+LEFTWARDS ARROW
+Unicode: U+2190, UTF-8: E2 86 90</string>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="prev:" destination="A9p-vX-ICt" eventType="touchUpInside" id="RLH-9x-dB8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mke-3X-1eC">
+                                <rect key="frame" x="902" y="666" width="50" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="45"/>
+                                <state key="normal" title="→">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nex:" destination="A9p-vX-ICt" eventType="touchUpInside" id="9iO-oR-ybo"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kuw-Cf-w7D">
+                                <rect key="frame" x="248" y="686" width="524" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttX-Vv-vPx">
+                                <rect key="frame" x="6" y="20" width="64" height="62"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="42"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" red="0.77788666979999999" green="0.82133760450000004" blue="0.97610586290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 29 of 29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T6n-GN-wIb">
+                                <rect key="frame" x="71" y="600" width="879" height="114"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-15-KDR">
+                                <rect key="frame" x="248" y="705" width="524" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showUnfinishedInfo:" destination="A9p-vX-ICt" eventType="touchUpInside" id="MU6-Tw-5cb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2SW-Yx-vD9" appends="YES" id="qds-kH-muT"/>
+                            <outletCollection property="gestureRecognizers" destination="DJ0-AE-gYT" appends="YES" id="8Ga-yi-OkV"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="nexButton" destination="mke-3X-1eC" id="hir-sY-8cn"/>
+                        <outlet property="prevButton" destination="AMC-jd-SMS" id="VMp-ox-IrB"/>
+                        <outlet property="progBar" destination="Kuw-Cf-w7D" id="M0a-06-Mbh"/>
+                        <outlet property="questionLabel" destination="i5M-YN-qwc" id="2fr-Sb-Cb8"/>
+                        <outlet property="questionNum" destination="T6n-GN-wIb" id="T0f-HJ-082"/>
+                        <outlet property="s1Label" destination="W8D-kP-rj7" id="09s-Xw-dNf"/>
+                        <outlet property="s2Label" destination="FsA-bW-kec" id="Hr2-kn-Ev6"/>
+                        <outlet property="select1Button" destination="68T-yp-SQS" id="7Bf-mA-dYa"/>
+                        <outlet property="select2Button" destination="y66-0v-gJ9" id="Ny3-sc-Aam"/>
+                        <outlet property="showUnfinishedInfoButton" destination="lT8-15-KDR" id="eoW-0I-ggd"/>
+                        <segue destination="4EH-C4-lGd" kind="modal" identifier="socializerSegue" id="q1C-Yn-1KF"/>
+                        <segue destination="Gep-T2-Ilc" kind="modal" identifier="explorerSegue" id="JxU-XS-KBB"/>
+                        <segue destination="oy1-dY-zn3" kind="modal" identifier="acheiverSegue" id="uXn-MK-h2P"/>
+                        <segue destination="yVg-zm-ByK" kind="modal" identifier="killerSegue" id="oHf-Yp-rPX"/>
+                        <segue destination="3er-AY-B2F" kind="modal" identifier="comboSegue" id="ZAf-2W-RqD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDu-33-h8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="2SW-Yx-vD9">
+                    <connections>
+                        <action selector="nex:" destination="A9p-vX-ICt" id="ndU-4d-eGd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="DJ0-AE-gYT">
+                    <connections>
+                        <action selector="prev:" destination="A9p-vX-ICt" id="6L8-Us-Tun"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1421" y="381"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="ddd-0u-Wvx">
+            <objects>
+                <viewController id="Zwe-tE-YgY" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3fc-u7-Epl"/>
+                        <viewControllerLayoutGuide type="bottom" id="bXa-HW-oM3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zcJ-hx-7NE">
+                        <rect key="frame" x="0.0" y="0.0" width="750" height="330"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExploreIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-9w-9Iv">
+                                <rect key="frame" x="34" y="34" width="105" height="105"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="545" translatesAutoresizingMaskIntoConstraints="NO" id="nMs-VI-zMN">
+                                <rect key="frame" x="170" y="34" width="545" height="255"/>
+                                <string key="text">Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="750" height="330"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtp-BK-k9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8643" y="549"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="MQC-Tp-ny7">
+            <objects>
+                <viewController id="WhH-b1-Xyn" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VTI-Ae-nWa"/>
+                        <viewControllerLayoutGuide type="bottom" id="gde-i8-LDg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fxr-3v-TWt">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vZP-jo-0W8">
+                                <rect key="frame" x="129" y="144" width="766" height="96"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="38"/>
+                                <color key="textColor" red="0.4217440978" green="0.56358677550000003" blue="0.76384171199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8KJ-sz-SfV">
+                                <rect key="frame" x="129" y="238" width="766" height="2"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ywZ-qU-sMy">
+                                <rect key="frame" x="129" y="258" width="766" height="96"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="38"/>
+                                <color key="textColor" red="0.97000254760000004" green="0.8660715148" blue="0.0023683906490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n8U-px-mSe">
+                                <rect key="frame" x="129" y="352" width="766" height="2"/>
+                                <color key="tintColor" red="0.97000254760000004" green="0.8660715148" blue="0.0023683906490000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwD-xB-ziG">
+                                <rect key="frame" x="129" y="372" width="766" height="96"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="38"/>
+                                <color key="textColor" red="0.38671898500000002" green="0.76384171199999995" blue="0.40415608860000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="26J-q1-GUT">
+                                <rect key="frame" x="129" y="466" width="766" height="2"/>
+                                <color key="tintColor" red="0.38671898500000002" green="0.76384171199999995" blue="0.40415608860000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JVm-hi-UPG">
+                                <rect key="frame" x="129" y="486" width="766" height="96"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="38"/>
+                                <color key="textColor" red="0.76384171199999995" green="0.018006590789999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lRL-sN-zqk">
+                                <rect key="frame" x="129" y="580" width="766" height="2"/>
+                                <color key="tintColor" red="0.76384171199999995" green="0.018006590789999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUb-ai-efq">
+                                <rect key="frame" x="873" y="198" width="22" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <connections>
+                                    <segue destination="Zwe-tE-YgY" kind="popover" popoverAnchorView="BUb-ai-efq" id="91z-8q-O0n">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e1-nc-LiZ">
+                                <rect key="frame" x="873" y="312" width="22" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.97000254760000004" green="0.8660715148" blue="0.0023683906490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="37U-1k-OnJ" kind="popover" popoverAnchorView="1e1-nc-LiZ" id="BSN-bj-smo">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0P-en-XCO">
+                                <rect key="frame" x="873" y="426" width="22" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.38671898500000002" green="0.76384171199999995" blue="0.40415608860000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="m16-Mb-Gkm" kind="popover" popoverAnchorView="T0P-en-XCO" id="btf-pb-aln">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YC8-jJ-7Nr">
+                                <rect key="frame" x="873" y="540" width="22" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.76384171199999995" green="0.018006590789999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="ozb-sq-R9v" kind="popover" popoverAnchorView="YC8-jJ-7Nr" id="wIm-Z5-Nfq">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFF-9F-twJ">
+                                <rect key="frame" x="846" y="666" width="49" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="WhH-b1-Xyn" eventType="touchUpInside" id="0Hd-Nh-5ec"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p1l-2q-cQO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="acBar" destination="n8U-px-mSe" id="4Jv-lM-agi"/>
+                        <outlet property="acPercentLabel" destination="ywZ-qU-sMy" id="ey4-qT-t81"/>
+                        <outlet property="exPercentLabel" destination="vZP-jo-0W8" id="dOd-wf-wNC"/>
+                        <outlet property="kiBar" destination="lRL-sN-zqk" id="OCr-2H-22L"/>
+                        <outlet property="kiPercentLabel" destination="JVm-hi-UPG" id="jBA-6v-Boe"/>
+                        <outlet property="soPercentLabel" destination="qwD-xB-ziG" id="et7-HT-kl0"/>
+                        <outlet property="socBar" destination="26J-q1-GUT" id="SxB-IG-InF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ouf-De-Egn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7391" y="209"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kY1-tg-f7Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rQs-oY-BWQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="0bZ-aa-OLk"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e3z-QL-ErY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WhH-b1-Xyn" kind="relationship" relationship="rootViewController" id="96a-Fk-Avp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhn-VS-6jj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6093" y="209"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="KPB-E5-GvO">
+            <objects>
+                <viewController id="37U-1k-OnJ" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7gf-BX-Ets"/>
+                        <viewControllerLayoutGuide type="bottom" id="CqL-tU-kc7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jey-QE-4fF">
+                        <rect key="frame" x="0.0" y="0.0" width="750" height="360"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Achieve icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="rUK-Dd-DC0">
+                                <rect key="frame" x="34" y="34" width="105" height="105"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="533" translatesAutoresizingMaskIntoConstraints="NO" id="bxb-Xw-pla">
+                                <rect key="frame" x="170" y="34" width="533" height="287"/>
+                                <string key="text">Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="750" height="360"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SjS-pP-ZZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9492" y="564"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="hwC-3N-tFE">
+            <objects>
+                <viewController id="m16-Mb-Gkm" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UA3-rR-Sdp"/>
+                        <viewControllerLayoutGuide type="bottom" id="PkU-sN-eCh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FBC-fH-zuO">
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="410"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SocIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jqm-D1-rs1">
+                                <rect key="frame" x="34" y="34" width="105" height="105"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="507" translatesAutoresizingMaskIntoConstraints="NO" id="PUm-yQ-eBa">
+                                <rect key="frame" x="170" y="34" width="507" height="342"/>
+                                <string key="text">Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="700" height="410"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Noj-qF-Uj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8618" y="81"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="wNA-zr-peB">
+            <objects>
+                <viewController id="ozb-sq-R9v" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ggu-a8-gVt"/>
+                        <viewControllerLayoutGuide type="bottom" id="0rW-xG-ypZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OnT-fd-NXv">
+                        <rect key="frame" x="0.0" y="0.0" width="830" height="355"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kill.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bgp-03-Vak">
+                                <rect key="frame" x="34" y="34" width="105" height="105"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="605" translatesAutoresizingMaskIntoConstraints="NO" id="mG0-u2-K1m">
+                                <rect key="frame" x="170" y="34" width="605" height="286"/>
+                                <string key="text">In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="21"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="830" height="355"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyS-r4-8z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9492" y="85.5"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="xAj-5v-DbT">
+            <objects>
+                <viewController id="4EH-C4-lGd" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2bX-bE-1uf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mhb-5P-djm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xhF-zE-tkg">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erQ-HI-nJ8">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="768"/>
+                                <color key="backgroundColor" red="0.79215686269999996" green="0.87843137250000003" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Socializer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="391" translatesAutoresizingMaskIntoConstraints="NO" id="sa4-hg-wdT">
+                                <rect key="frame" x="209" y="125" width="391" height="120"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.85882352939999995" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-vK-43o">
+                                <rect key="frame" x="209" y="660" width="127" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="See My Stats">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rQs-oY-BWQ" kind="modal" id="lCb-jW-tEG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="socializer cropped.png" translatesAutoresizingMaskIntoConstraints="NO" id="e6n-eH-SJH">
+                                <rect key="frame" x="0.0" y="20" width="138" height="138"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idi-ZS-Ax5">
+                                <rect key="frame" x="879" y="660" width="75" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Vw-9B-Jyz" kind="unwind" unwindAction="goHome:" id="03N-J6-8qt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="745" translatesAutoresizingMaskIntoConstraints="NO" id="16Y-hA-BBn">
+                                <rect key="frame" x="209" y="253" width="745" height="353"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="29" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azq-4M-h5H">
+                                <rect key="frame" x="374" y="676" width="154" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Email My Results">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailRes:" destination="4EH-C4-lGd" eventType="touchUpInside" id="mWs-SE-mJm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AgA-X5-ul1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8Vw-9B-Jyz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3405" y="1285"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="Ii6-de-Det">
+            <objects>
+                <viewController id="oy1-dY-zn3" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lXJ-mN-AI6"/>
+                        <viewControllerLayoutGuide type="bottom" id="vNa-71-lJA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I9Y-vg-CAU">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPH-Fh-arV">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="768"/>
+                                <color key="backgroundColor" red="1" green="0.96356050131529836" blue="0.457055548444669" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acheiver" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="391" translatesAutoresizingMaskIntoConstraints="NO" id="VR2-bV-O8D">
+                                <rect key="frame" x="209" y="133" width="391" height="120"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" red="1" green="0.92565306209999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXc-Nh-J1I">
+                                <rect key="frame" x="209" y="660" width="127" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="See My Stats">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rQs-oY-BWQ" kind="modal" id="0kn-Jr-QVu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="acheiver cropped.png" translatesAutoresizingMaskIntoConstraints="NO" id="q6N-nf-P2r">
+                                <rect key="frame" x="-3" y="20" width="138" height="138"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="745" translatesAutoresizingMaskIntoConstraints="NO" id="9J0-LR-dNh">
+                                <rect key="frame" x="209" y="261" width="745" height="340"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="31" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sW-eJ-LdK">
+                                <rect key="frame" x="875" y="660" width="79" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rlq-6z-54a" kind="unwind" unwindAction="goHome:" id="glI-px-UId"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2X-Au-ZDu">
+                                <rect key="frame" x="374" y="676" width="154" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Email My Results">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailRes:" destination="oy1-dY-zn3" eventType="touchUpInside" id="cMp-vF-ZbS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUG-Re-iPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rlq-6z-54a" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3460" y="2139"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="mVo-59-pqb">
+            <objects>
+                <viewController id="Gep-T2-Ilc" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XNT-sY-nOj"/>
+                        <viewControllerLayoutGuide type="bottom" id="e1g-st-0Gs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U0k-rD-4nQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explorer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="391" translatesAutoresizingMaskIntoConstraints="NO" id="Aaw-Fh-7VQ">
+                                <rect key="frame" x="209" y="136" width="391" height="120"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" red="0.72156862745098038" green="0.8784313725490196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AV-dQ-SOW">
+                                <rect key="frame" x="209" y="660" width="127" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="See My Stats">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rQs-oY-BWQ" kind="modal" id="fkF-m4-fvU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explorer cropped.png" translatesAutoresizingMaskIntoConstraints="NO" id="BW5-tz-x6s">
+                                <rect key="frame" x="0.0" y="20" width="138" height="138"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="745" translatesAutoresizingMaskIntoConstraints="NO" id="kbw-I0-pjl">
+                                <rect key="frame" x="209" y="264" width="745" height="339"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="31" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAt-kd-p09">
+                                <rect key="frame" x="886" y="660" width="68" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CDk-li-ThM" kind="unwind" unwindAction="goHome:" id="IWk-us-LBn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tft-O4-DCy">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="768"/>
+                                <color key="backgroundColor" red="0.7120948912515257" green="0.8786675817154409" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-pE-evt">
+                                <rect key="frame" x="374" y="676" width="154" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Email My Results">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailRes:" destination="Gep-T2-Ilc" eventType="touchUpInside" id="Yld-HJ-mN8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ze5-bq-t8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CDk-li-ThM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4522" y="1305"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="SpM-mU-nc2">
+            <objects>
+                <viewController id="yVg-zm-ByK" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0un-cS-iYg"/>
+                        <viewControllerLayoutGuide type="bottom" id="XQu-rx-q7I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6YD-2e-p5V">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="313-8r-MgA">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="768"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.32941176470588235" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Greifer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="391" translatesAutoresizingMaskIntoConstraints="NO" id="7yp-Gh-Yg7">
+                                <rect key="frame" x="209" y="104" width="391" height="120"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" red="1" green="0.47272671719999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GM-Jl-yBW">
+                                <rect key="frame" x="209" y="660" width="127" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="See My Stats">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rQs-oY-BWQ" kind="modal" id="SLs-OR-7xW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-cu-YRp">
+                                <rect key="frame" x="374" y="676" width="154" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Email My Results">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailRes:" destination="yVg-zm-ByK" eventType="touchUpInside" id="Afa-Gh-U9K"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="killer cropped.png" translatesAutoresizingMaskIntoConstraints="NO" id="irh-Xp-1cg">
+                                <rect key="frame" x="0.0" y="20" width="138" height="138"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1z-Zt-hUQ">
+                                <rect key="frame" x="891" y="660" width="63" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5sM-kW-NYl" kind="unwind" unwindAction="goHome:" id="FeR-0E-yE5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="745" translatesAutoresizingMaskIntoConstraints="NO" id="e4k-5E-0h2">
+                                <rect key="frame" x="209" y="232" width="745" height="399"/>
+                                <string key="text">In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MhJ-Tr-a0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5sM-kW-NYl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4522" y="2139"/>
+        </scene>
+        <!--Bartle View Controller-->
+        <scene sceneID="lff-1W-fxi">
+            <objects>
+                <viewController id="3er-AY-B2F" customClass="bartleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Osa-xA-Ejz"/>
+                        <viewControllerLayoutGuide type="bottom" id="xG4-mw-iUU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sIm-k7-GCs">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Killer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="675" translatesAutoresizingMaskIntoConstraints="NO" id="3b5-i1-P5o">
+                                <rect key="frame" x="80" y="104" width="675" height="120"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCP-xR-AeI">
+                                <rect key="frame" x="883" y="660" width="71" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="p8f-Ot-ZKi" kind="unwind" unwindAction="goHome:" id="Ny3-we-a6V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" preferredMaxLayoutWidth="745" translatesAutoresizingMaskIntoConstraints="NO" id="mil-X1-Lng">
+                                <rect key="frame" x="80" y="232" width="874" height="411"/>
+                                <string key="text">In the online gaming world, Killers, aka Griefers,  willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yt-X7-90n">
+                                <rect key="frame" x="80" y="660" width="127" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="See My Stats">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rQs-oY-BWQ" kind="modal" id="CdI-wV-jrg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yva-Yk-Tqi">
+                                <rect key="frame" x="245" y="676" width="154" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Email My Results">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailRes:" destination="3er-AY-B2F" eventType="touchUpInside" id="Twb-49-sIr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="mainTitleLabel" destination="3b5-i1-P5o" id="iIF-2z-14U"/>
+                        <outlet property="quizScrollingDescriptionLabel" destination="mil-X1-Lng" id="1xe-AQ-dJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIY-PE-2YL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="p8f-Ot-ZKi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3831" y="309"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8-Bit Black.png" width="1600" height="1600"/>
+        <image name="Achieve icon.png" width="369" height="369"/>
+        <image name="ExploreIcon.png" width="371" height="371"/>
+        <image name="Kill.png" width="368" height="368"/>
+        <image name="SocIcon.png" width="369" height="369"/>
+        <image name="acheiver cropped.png" width="490" height="490"/>
+        <image name="explorer cropped.png" width="490" height="490"/>
+        <image name="killer cropped.png" width="490" height="490"/>
+        <image name="socializer cropped.png" width="490" height="490"/>
+        <image name="sqaureexplorer.png" width="490" height="490"/>
+        <image name="square socializer.png" width="490" height="490"/>
+        <image name="squareacheiver.png" width="490" height="490"/>
+        <image name="squrekiller.png" width="367" height="367"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0fu-z1-qG0"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.4217440978" green="0.56358677550000003" blue="0.76384171199999995" alpha="1" colorSpace="calibratedRGB"/>
+</document>
