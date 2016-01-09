@@ -50,7 +50,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nAu-tQ-9ed">
-                                <rect key="frame" x="164" y="337.99999774202917" width="121" height="33"/>
+                                <rect key="frame" x="164" y="337.99999609425629" width="121" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                 <state key="normal" title="Take the Test">
@@ -154,7 +154,7 @@ iOS App Developed by Alexander Chai. Tap here for more info</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5b9-TE-j7a">
-                                <rect key="frame" x="247" y="429.99999959399747" width="39" height="30"/>
+                                <rect key="frame" x="247.00000101327896" y="429.99999937766302" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Back">
@@ -1015,7 +1015,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="yuE-sZ-qRF">
-                                <rect key="frame" x="34" y="193.00000304397571" width="267" height="399"/>
+                                <rect key="frame" x="34" y="193" width="267" height="399"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1271,7 +1271,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oxT-GM-ZPL">
-                                <rect key="frame" x="279.00000272453133" y="610" width="61" height="37"/>
+                                <rect key="frame" x="279" y="610" width="61" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1359,7 +1359,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pi1-w8-ExP">
-                                <rect key="frame" x="279.00000172606315" y="617" width="61" height="30"/>
+                                <rect key="frame" x="279.00000272453133" y="617" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1443,7 +1443,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TKt-Rz-t9I">
-                                <rect key="frame" x="279" y="610.00000025939062" width="61" height="37"/>
+                                <rect key="frame" x="279.0000008207852" y="610.00000025939062" width="61" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>

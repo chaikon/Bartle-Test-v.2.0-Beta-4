@@ -431,6 +431,7 @@ NSMutableArray *answerTypes;
     else{
         
         [self.showUnfinishedInfoButton setTitle:@"" forState:UIControlStateNormal];
+        unfinishedAndChecked=false;
         return true;
     }
 }
@@ -820,7 +821,7 @@ NSMutableArray *answerTypes;
     [self UpdateUnfinishedQuestionLabel];
 
     
-    //[self advance];
+    [self advance];
 }
 
 - (IBAction)select2:(id)sender {
@@ -943,8 +944,11 @@ NSMutableArray *answerTypes;
         self.mainTitleLabel.text = @"a Socializer-Greifer";
     }
     
-    NSString *URLtemp = @"mailto:?subject=I%20am%20";
-    NSString *urlSt = [URLtemp stringByAppendingString:[type stringByReplacingOccurrencesOfString:@"" withString:@"%20"]];
+    NSString *URLtemp = @"mailto:?cc=&subject=";
+    NSString *subjectTemp = @"I am ";
+    NSString *subjectString = [subjectTemp stringByAppendingString:type];
+    NSString *subjectStringWithPercentEscapes = [subjectString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *urlSt = [URLtemp stringByAppendingString:subjectStringWithPercentEscapes];
     NSURL *mailURL = [NSURL URLWithString:urlSt];
     [[UIApplication sharedApplication] openURL:mailURL];
 }
