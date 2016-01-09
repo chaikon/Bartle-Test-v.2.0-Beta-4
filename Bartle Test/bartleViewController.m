@@ -821,7 +821,7 @@ NSMutableArray *answerTypes;
     [self UpdateUnfinishedQuestionLabel];
 
     
-    [self advance];
+//    [self advance];
 }
 
 - (IBAction)select2:(id)sender {
@@ -840,7 +840,7 @@ NSMutableArray *answerTypes;
     
     [self UpdateUnfinishedQuestionLabel];
 
-    //[self advance];
+//    [self advance];
     
 }
 
@@ -913,35 +913,35 @@ NSMutableArray *answerTypes;
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"S"]){
-        self.mainTitleLabel.text = @"a Socializer";
+        type = @"a Socializer";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"K"]){
-        self.mainTitleLabel.text = @"a Greifer";
+        type = @"a Greifer";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"EA"]){
-        self.mainTitleLabel.text = @"an Explorer-Achiever";
+        type = @"an Explorer-Achiever";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"ES"]){
-        self.mainTitleLabel.text = @"an Explorer-Socializer";
+        type = @"an Explorer-Socializer";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"EK"]){
-        self.mainTitleLabel.text = @"an Explorer-Griefer";
+        type = @"an Explorer-Griefer";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"AS"]){
-        self.mainTitleLabel.text = @"an Achiever-Socializer";
+        type = @"an Achiever-Socializer";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"AK"]){
-        self.mainTitleLabel.text = @"an Achiever-Greifer";
+        type = @"an Achiever-Greifer";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"SK"]){
-        self.mainTitleLabel.text = @"a Socializer-Greifer";
+        type = @"a Socializer-Greifer";
     }
     
     NSString *URLtemp = @"mailto:?cc=&subject=";
