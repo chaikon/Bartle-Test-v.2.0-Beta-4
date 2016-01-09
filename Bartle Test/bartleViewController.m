@@ -943,7 +943,8 @@ NSMutableArray *answerTypes;
         self.mainTitleLabel.text = @"a Socializer-Greifer";
     }
     
-    NSString *urlSt = [NSString stringWithFormat:@"mailto: ?Subject=I am %@",type];
+    NSString *URLtemp = @"mailto:?subject=I%20am%20";
+    NSString *urlSt = [URLtemp stringByAppendingString:[type stringByReplacingOccurrencesOfString:@"" withString:@"%20"]];
     NSURL *mailURL = [NSURL URLWithString:urlSt];
     [[UIApplication sharedApplication] openURL:mailURL];
 }
