@@ -577,7 +577,7 @@ NSMutableArray *answerTypes;
         [self segueToResult:@"socializerSegue"];
     }
     if ([biggestThingy isEqual:@"K"]){
-        [self segueToResult:@"killerSegue"];
+        [self segueToResult:@"grieferSegue"];
     }
     else {
         [self performSegueWithIdentifier:@"comboSegue" sender:nil];
@@ -646,7 +646,7 @@ NSMutableArray *answerTypes;
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"K"]){
-        self.mainTitleLabel.text = @"You're a Greifer";
+        self.mainTitleLabel.text = @"You're a Griefer";
         self.quizScrollingDescriptionLabel.text = @"In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
@@ -677,7 +677,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"EK"]){
         self.mainTitleLabel.text = @"Explorer-Griefer";
-        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Explorer and a Killer. Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
+        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Explorer and a Griefer. Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -696,8 +696,8 @@ NSMutableArray *answerTypes;
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"AK"]){
-        self.mainTitleLabel.text = @"Achiever-Greifer";
-        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Achiever and those of a Killer. Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
+        self.mainTitleLabel.text = @"Achiever-Griefer";
+        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Achiever and those of a Griefer. Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -706,8 +706,8 @@ NSMutableArray *answerTypes;
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"SK"]){
-        self.mainTitleLabel.text = @"Socializer-Greifer";
-        self.quizScrollingDescriptionLabel.text = @"You combine both the characteristics of a Socializer and those of a Killer. Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
+        self.mainTitleLabel.text = @"Socializer-Griefer";
+        self.quizScrollingDescriptionLabel.text = @"You combine both the characteristics of a Socializer and those of a Griefer. Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -719,7 +719,7 @@ NSMutableArray *answerTypes;
     else{
         self.mainTitleLabel.text = @"The Bartle Test";
         self.quizScrollingDescriptionLabel.text=@" ";
-        self.initialScrollingDescriptionLabel.text = @"The Bartle Test of Gamer Psychology is an online multiple choice test. The test is based on how students play games and only takes a few minutes. Students fall into one or more of four categories: Socializer, Achiever, Explorer, or Killer. I use these results to inform how I make groups and how I ask kids to collaborate. It offers useful insight into how students will react in different situations, and also provides a starting point for me at the beginning of the semester. Try it yourself, and see what insights it gives you into how best to engage your students.";
+        self.initialScrollingDescriptionLabel.text = @"The Bartle Test of Gamer Psychology is an online multiple choice test. The test is based on how students play games and only takes a few minutes. Students fall into one or more of four categories: Socializer, Achiever, Explorer, or Griefer. I use these results to inform how I make groups and how I ask kids to collaborate. It offers useful insight into how students will react in different situations, and also provides a starting point for me at the beginning of the semester. Try it yourself, and see what insights it gives you into how best to engage your students.";
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
         [_startQuizLabel setTitle:@"Take the Test" forState:UIControlStateNormal];
         
@@ -739,7 +739,7 @@ NSMutableArray *answerTypes;
 -(void)resetToDefault{
     self.mainTitleLabel.text = @"The Bartle Test";
     self.quizScrollingDescriptionLabel.text=@" ";
-    self.initialScrollingDescriptionLabel.text = @"The Bartle Test of Gamer Psychology is an online multiple choice test. On one of the first days of class, I ask my students to take the Bartle Test online, and report their results to me on a Google Form. It takes about twenty minutes. Based on the students’ answers, it assigns a weight in four separate categories: Socializer, Achiever, Explorer, or Killer. Students will often be a mixture of more than one category, although most of the weight will usually be in one category. I use these results to inform how I make groups and how I ask kids to collaborate. The test is based on how students play games. It offers useful insight into how students will react in different situations, and also provides a starting point for me at the beginning of the semester. Try it yourself, and see what insights it gives you into how best to engage your students.";
+    self.initialScrollingDescriptionLabel.text = @"The Bartle Test of Gamer Psychology is an online multiple choice test. On one of the first days of class, I ask my students to take the Bartle Test online, and report their results to me on a Google Form. It takes about twenty minutes. Based on the students’ answers, it assigns a weight in four separate categories: Socializer, Achiever, Explorer, or Griefer. Students will often be a mixture of more than one category, although most of the weight will usually be in one category. I use these results to inform how I make groups and how I ask kids to collaborate. The test is based on how students play games. It offers useful insight into how students will react in different situations, and also provides a starting point for me at the beginning of the semester. Try it yourself, and see what insights it gives you into how best to engage your students.";
 
     self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
     [_startQuizLabel setTitle:@"Take the Test" forState:UIControlStateNormal];
@@ -780,7 +780,7 @@ NSMutableArray *answerTypes;
     [self.kiBar setProgress:frac animated:YES];
     perc = frac*100+.5;
     intPerc = perc;
-    self.kiPercentLabel.text = [[@"Greifer - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    self.kiPercentLabel.text = [[@"Griefer - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
     
 }
 
@@ -821,7 +821,7 @@ NSMutableArray *answerTypes;
     [self UpdateUnfinishedQuestionLabel];
 
     
-//    [self advance];
+    [self advance];
 }
 
 - (IBAction)select2:(id)sender {
@@ -840,7 +840,7 @@ NSMutableArray *answerTypes;
     
     [self UpdateUnfinishedQuestionLabel];
 
-//    [self advance];
+    [self advance];
     
 }
 
@@ -917,7 +917,7 @@ NSMutableArray *answerTypes;
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"K"]){
-        type = @"a Greifer";
+        type = @"a Griefer";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"EA"]){
@@ -937,11 +937,11 @@ NSMutableArray *answerTypes;
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"AK"]){
-        type = @"an Achiever-Greifer";
+        type = @"an Achiever-Griefer";
     }
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"SK"]){
-        type = @"a Socializer-Greifer";
+        type = @"a Socializer-Griefer";
     }
     
     NSString *URLtemp = @"mailto:?cc=&subject=";
