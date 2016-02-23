@@ -9,7 +9,6 @@
             <string>HelveticaNeue</string>
         </mutableArray>
         <mutableArray key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Thin</string>
             <string>HelveticaNeue-UltraLight</string>
             <string>HelveticaNeue-UltraLight</string>
             <string>HelveticaNeue-UltraLight</string>
@@ -49,25 +48,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nAu-tQ-9ed">
-                                <rect key="frame" x="164" y="337.99999609425629" width="121" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
-                                <state key="normal" title="Take the Test">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="takeQuiz:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QS0-n4-rKk"/>
-                                    <segue destination="i3N-3X-C6R" kind="modal" modalTransitionStyle="coverVertical" id="O9I-md-AdT"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aeb-wY-1mw">
-                                <rect key="frame" x="49" y="41" width="46" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Ue-5w-SM1">
                                 <rect key="frame" x="0.0" y="446" width="320" height="32"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -90,9 +70,9 @@ iOS App Developed by Alexander Chai. Tap here for more info</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="clip" id="lgx-eL-OZJ">
-                                <rect key="frame" x="164" y="373" width="121" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="185" y="382" width="102" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13.5"/>
                                 <state key="normal" title="About the Test">
                                     <color key="titleColor" red="0.4217440978" green="0.56358677550000003" blue="0.76384171199999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -102,28 +82,40 @@ iOS App Developed by Alexander Chai. Tap here for more info</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square socializer.png" id="yfi-W0-az9">
-                                <rect key="frame" x="236" y="50" width="50" height="50"/>
+                                <rect key="frame" x="237" y="93" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squareacheiver.png" id="knX-cQ-ncD">
-                                <rect key="frame" x="185" y="101" width="50" height="50"/>
+                                <rect key="frame" x="185" y="41" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sqaureexplorer.png" id="vW5-jj-dpR">
-                                <rect key="frame" x="185" y="50" width="50" height="50"/>
+                                <rect key="frame" x="185" y="93" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squrekiller.png" id="btL-tv-mGW">
-                                <rect key="frame" x="236" y="101" width="50" height="50"/>
+                                <rect key="frame" x="237" y="41" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The           Bartle Test " lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" id="rai-Jl-bEU">
-                                <rect key="frame" x="38" y="220" width="138" height="204"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The                      Bartle Test " lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" id="rai-Jl-bEU">
+                                <rect key="frame" x="38" y="239" width="202" height="126.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="105"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nAu-tQ-9ed">
+                                <rect key="frame" x="38" y="382" width="121" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
+                                <state key="normal" title="Take the Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeQuiz:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QS0-n4-rKk"/>
+                                    <segue destination="i3N-3X-C6R" kind="modal" modalTransitionStyle="coverVertical" id="O9I-md-AdT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -154,7 +146,7 @@ iOS App Developed by Alexander Chai. Tap here for more info</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5b9-TE-j7a">
-                                <rect key="frame" x="247.00000214701757" y="429.99999814645275" width="39" height="30"/>
+                                <rect key="frame" x="247.00000341553627" y="430" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Back">
@@ -381,7 +373,7 @@ Cg
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QqH-0r-DGF">
                                 <rect key="frame" x="0.0" y="163" width="320" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86148389796218139" green="0.86722141403767383" blue="0.88443396226415094" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.90534871351135537" green="0.91892991872306518" blue="0.93632075471698117" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1011,7 +1003,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="yuE-sZ-qRF">
-                                <rect key="frame" x="34" y="200.00000255448469" width="267" height="392"/>
+                                <rect key="frame" x="34" y="200.00000543259489" width="267" height="392"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1271,7 +1263,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oxT-GM-ZPL">
-                                <rect key="frame" x="279.00000172606303" y="610" width="61" height="37"/>
+                                <rect key="frame" x="279.00000272453121" y="610" width="61" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1359,7 +1351,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pi1-w8-ExP">
-                                <rect key="frame" x="279" y="617" width="61" height="30"/>
+                                <rect key="frame" x="279" y="613" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1377,7 +1369,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" id="NR8-ln-eLP">
-                                <rect key="frame" x="34" y="617" width="38" height="30"/>
+                                <rect key="frame" x="34" y="613" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1388,7 +1380,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9vu-8p-QHm">
-                                <rect key="frame" x="119" y="617" width="118" height="30"/>
+                                <rect key="frame" x="119" y="613" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Email My Results">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1443,7 +1435,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TKt-Rz-t9I">
-                                <rect key="frame" x="279.00000272453121" y="610.00000025939062" width="61" height="37"/>
+                                <rect key="frame" x="279" y="610.00000025939062" width="61" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1524,7 +1516,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nUd-nB-1v7"/>
+        <segue reference="BbO-Li-08F"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.4217440978" green="0.56358677550000003" blue="0.76384171199999995" alpha="1" colorSpace="calibratedRGB"/>
 </document>

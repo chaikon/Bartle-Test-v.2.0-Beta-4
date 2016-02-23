@@ -834,7 +834,7 @@ NSString *grPer;
     [self UpdateUnfinishedQuestionLabel];
 
     
-    [self advance];
+//    [self advance];
 }
 
 - (IBAction)select2:(id)sender {
@@ -853,7 +853,7 @@ NSString *grPer;
     
     [self UpdateUnfinishedQuestionLabel];
 
-    [self advance];
+//    [self advance];
     
 }
 
