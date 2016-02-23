@@ -52,7 +52,7 @@
         [stdDefaults setObject:0 forKey:@"ExploreNum"];
         [stdDefaults setObject:0 forKey:@"AchieveNum"];
         [stdDefaults setObject:0 forKey:@"SocialNum"];
-        [stdDefaults setObject:0 forKey:@"KillNum"];
+        [stdDefaults setObject:0 forKey:@"GrfNum"];
         [stdDefaults setObject:@"NA" forKey:@"Biggest Trait"];
         [stdDefaults synchronize];
 }

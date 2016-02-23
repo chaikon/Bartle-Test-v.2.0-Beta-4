@@ -3,7 +3,7 @@
 //  Bartle Test
 //
 //  Created by Alex Chai on 11/16/13.
-//  Copyright (c) 2013-2015 Punahou School. All rights reserved.
+//  Copyright (c) 2013-2016 Punahou School. All rights reserved.
 //THIS IS THE RELEASE V
 
 #import <UIKit/UIKit.h>

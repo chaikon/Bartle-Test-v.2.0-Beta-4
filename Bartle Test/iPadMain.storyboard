@@ -355,7 +355,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                         <outlet property="showUnfinishedInfoButton" destination="lT8-15-KDR" id="eoW-0I-ggd"/>
                         <segue destination="4EH-C4-lGd" kind="modal" identifier="socializerSegue" id="q1C-Yn-1KF"/>
                         <segue destination="Gep-T2-Ilc" kind="modal" identifier="explorerSegue" id="JxU-XS-KBB"/>
-                        <segue destination="oy1-dY-zn3" kind="modal" identifier="acheiverSegue" id="uXn-MK-h2P"/>
+                        <segue destination="oy1-dY-zn3" kind="modal" identifier="achieverSegue" id="uXn-MK-h2P"/>
                         <segue destination="yVg-zm-ByK" kind="modal" identifier="grieferSegue" id="oHf-Yp-rPX"/>
                         <segue destination="3er-AY-B2F" kind="modal" identifier="comboSegue" id="ZAf-2W-RqD"/>
                     </connections>

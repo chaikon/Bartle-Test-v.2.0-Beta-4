@@ -50,7 +50,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nAu-tQ-9ed">
-                                <rect key="frame" x="164" y="337.99999774202917" width="121" height="33"/>
+                                <rect key="frame" x="164" y="337.99999609425629" width="121" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17.5"/>
                                 <state key="normal" title="Take the Test">
@@ -154,7 +154,7 @@ iOS App Developed by Alexander Chai. Tap here for more info</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5b9-TE-j7a">
-                                <rect key="frame" x="247.00000101327896" y="429.99999841408766" width="39" height="30"/>
+                                <rect key="frame" x="247.00000214701757" y="429.99999814645275" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Back">
@@ -379,7 +379,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QqH-0r-DGF">
-                                <rect key="frame" x="0.0" y="163" width="320" height="184"/>
+                                <rect key="frame" x="0.0" y="163" width="320" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.86148389796218139" green="0.86722141403767383" blue="0.88443396226415094" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -406,7 +406,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="TOZ-I9-KNQ">
-                                <rect key="frame" x="-2" y="257" width="329" height="89"/>
+                                <rect key="frame" x="-2" y="258" width="329" height="89"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9728715133636433" green="0.97153081384543005" blue="0.99494949494949492" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -514,11 +514,11 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                         <outlet property="showUnfinishedInfoButton" destination="J29-Km-7QJ" id="5Yb-xs-CDu"/>
                         <segue destination="kEi-fg-Q3r" kind="modal" identifier="explorerSegue" id="W6E-bk-EjI"/>
                         <segue destination="did-qh-iyU" kind="modal" identifier="socializerSegue" id="LHY-Px-IRT"/>
-                        <segue destination="VhS-3v-ZB8" kind="modal" identifier="killerSegue" id="tyZ-2h-NaU"/>
-                        <segue destination="xWi-i2-4Jh" kind="modal" identifier="acheiverSegue" id="1wn-MA-zZq"/>
+                        <segue destination="VhS-3v-ZB8" kind="modal" identifier="grieferSegue" id="tyZ-2h-NaU"/>
+                        <segue destination="xWi-i2-4Jh" kind="modal" identifier="achieverSegue" id="1wn-MA-zZq"/>
                         <segue destination="n02-Sc-HnB" kind="modal" identifier="comboSegue" id="3qJ-it-IiJ"/>
                         <segue destination="rVT-Oz-KBD" kind="modal" identifier="grieferSegue2" id="vHy-ky-5cU"/>
-                        <segue destination="nvd-6c-KBd" kind="modal" identifier="acheiverSegue2" id="dD6-pu-kWx"/>
+                        <segue destination="nvd-6c-KBd" kind="modal" identifier="achieverSegue2" id="dD6-pu-kWx"/>
                         <segue destination="NWq-g1-clw" kind="modal" identifier="socializerSegue2" id="fib-V5-u5K"/>
                         <segue destination="jaK-I0-V6q" kind="modal" identifier="explorerSegue2" id="btR-ZB-wbY"/>
                     </connections>
@@ -1011,7 +1011,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="yuE-sZ-qRF">
-                                <rect key="frame" x="34" y="200" width="267" height="392"/>
+                                <rect key="frame" x="34" y="200.00000255448469" width="267" height="392"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1271,7 +1271,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oxT-GM-ZPL">
-                                <rect key="frame" x="279.0000008207852" y="610" width="61" height="37"/>
+                                <rect key="frame" x="279.00000172606303" y="610" width="61" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1359,7 +1359,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pi1-w8-ExP">
-                                <rect key="frame" x="279.00000272453133" y="617" width="61" height="30"/>
+                                <rect key="frame" x="279" y="617" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1399,7 +1399,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="aLP-zE-wXn">
                                 <rect key="frame" x="34" y="192" width="266" height="411"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.</string>
@@ -1443,7 +1443,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TKt-Rz-t9I">
-                                <rect key="frame" x="279.00000172606303" y="610.00000025939062" width="61" height="37"/>
+                                <rect key="frame" x="279.00000272453121" y="610.00000025939062" width="61" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="My Stats">
                                     <color key="titleColor" red="0.35294117650000001" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1524,7 +1524,7 @@ Unicode: U+2190, UTF-8: E2 86 90</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5Je-LV-Wko"/>
+        <segue reference="nUd-nB-1v7"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.4217440978" green="0.56358677550000003" blue="0.76384171199999995" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -20,7 +20,7 @@ int totalNumQ = 0;
 int exploreNum = 0;
 int socialNum =0;
 int achieveNum = 0;
-int killNum = 0;
+int grfNum = 0;
 int amtMod = 0;
 bool unfinishedAndChecked;
 int notFinishedNum;
@@ -39,6 +39,12 @@ int notFinishedNum;
 NSMutableArray *questions;
 NSMutableArray *answers;
 NSMutableArray *answerTypes;
+
+NSString *descString;
+NSString *exPer;
+NSString *acPer;
+NSString *soPer;
+NSString *grPer;
 
 -(void)loadQuestions {
     
@@ -124,8 +130,8 @@ NSMutableArray *answerTypes;
     monsterChase.ans2Type = @"e";
 
     bartleQuestion *dragon = [[bartleQuestion alloc] init];
-    dragon.question = @"You want to buy a really tough dragon. How would you approach this problem?";
-    dragon.ans1 = @"Get a big group of players to kill it?";
+    dragon.question = @"You want to beat a really tough dragon. How would you approach this problem?";
+    dragon.ans1 = @"Get a big group of players to help?";
     dragon.ans2 = @"Try a variety of weapons and magic against it, until you find its weakness?";
     dragon.ans1Type = @"s";
     dragon.ans2Type = @"e";
@@ -499,7 +505,7 @@ NSMutableArray *answerTypes;
         }
         
         else if ([[answerTypes objectAtIndex:i] isEqual:@"k"]){
-            killNum++;
+            grfNum++;
         }
     }
     
@@ -537,13 +543,13 @@ NSMutableArray *answerTypes;
         biggestThingy = [biggestThingy stringByAppendingString:@"S"];
     }
     
-    if(biggestThingyNum<killNum){
-        biggestThingyNum=killNum;
+    if(biggestThingyNum<grfNum){
+        biggestThingyNum=grfNum;
         biggestThingy = @"K";
         
     }
     
-    else if(biggestThingyNum==killNum&&([biggestThingy length]<2)){
+    else if(biggestThingyNum==grfNum&&([biggestThingy length]<2)){
         biggestThingy = [biggestThingy stringByAppendingString:@"K"];
     }
     
@@ -557,7 +563,7 @@ NSMutableArray *answerTypes;
         [stdDefaults synchronize];
         [stdDefaults setObject:[NSNumber numberWithInt:socialNum] forKey:@"SocialNum"];
         [stdDefaults synchronize];
-        [stdDefaults setObject:[NSNumber numberWithInt:killNum] forKey:@"KillNum"];
+        [stdDefaults setObject:[NSNumber numberWithInt:grfNum] forKey:@"GrfNum"];
         [stdDefaults synchronize];
         [stdDefaults setObject:biggestThingy forKey:@"Biggest Trait"];
         [stdDefaults synchronize];
@@ -566,12 +572,12 @@ NSMutableArray *answerTypes;
     exploreNum=0;
     achieveNum=0;
     socialNum=0;
-    killNum=0;
+    grfNum=0;
     if ([biggestThingy isEqual:@"E"]){
         [self segueToResult:@"explorerSegue"];
     }
     if ([biggestThingy isEqual:@"A"]){
-        [self segueToResult:@"acheiverSegue"];
+        [self segueToResult:@"achieverSegue"];
     }
     if ([biggestThingy isEqual:@"S"]){
         [self segueToResult:@"socializerSegue"];
@@ -619,7 +625,7 @@ NSMutableArray *answerTypes;
     
     if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"E"]){
         self.mainTitleLabel.text = @"You're an Explorer";
-        self.quizScrollingDescriptionLabel.text = @"Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake.";
+        descString = @"Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"ExploreIcon.png"];
@@ -629,7 +635,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"A"]){
         self.mainTitleLabel.text = @"You're an Achiever";
-        self.quizScrollingDescriptionLabel.text = @"Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize.";
+        descString = @"Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"Achieve Icon.png"];
@@ -638,7 +644,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"S"]){
         self.mainTitleLabel.text = @"You're a Socializer";
-        self.quizScrollingDescriptionLabel.text = @"Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.";
+        descString = @"Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"SocIcon.png"];
@@ -647,7 +653,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"K"]){
         self.mainTitleLabel.text = @"You're a Griefer";
-        self.quizScrollingDescriptionLabel.text = @"In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
+        descString = @"In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"Kill.png"];
@@ -657,7 +663,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"EA"]){
         self.mainTitleLabel.text = @"Explorer-Achiever";
-        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Explorer and an Achiever. Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake. Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize.";
+        descString = @"You combine both characteristics of an Explorer and an Achiever. Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake. Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -667,7 +673,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"ES"]){
         self.mainTitleLabel.text = @"Explorer-Socializer";
-        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Explorer and a Socializer. Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake.Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.";
+        descString = @"You combine both characteristics of an Explorer and a Socializer. Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake.Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -677,7 +683,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"EK"]){
         self.mainTitleLabel.text = @"Explorer-Griefer";
-        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Explorer and a Griefer. Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
+        descString = @"You combine both characteristics of an Explorer and a Griefer. Explorers love to learn and wander. In the game world, Explorers want to map the entire area and discover all of its hidden areas. In the classroom, Explorers love to amass large quantities of knowledge. Their sense of achievement comes from knowing more facts (often obscure ones) and finding secret shortcuts or mnemonics. Explorers are the closest to what we consider to be the ideal “academics”, who value knowledge for knowledge’s sake. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -687,7 +693,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"AS"]){
         self.mainTitleLabel.text = @"Achiever-Socializer";
-        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Achiever and a Socializer. Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize. Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.";
+        descString = @"You combine both characteristics of an Achiever and a Socializer. Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize. Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -697,7 +703,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"AK"]){
         self.mainTitleLabel.text = @"Achiever-Griefer";
-        self.quizScrollingDescriptionLabel.text = @"You combine both characteristics of an Achiever and those of a Griefer. Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
+        descString = @"You combine both characteristics of an Achiever and those of a Griefer. Achievers love to gain levels, badges, and awards. In the game world, Achievers gain a sense of accomplishment by being the first to complete something, or by being one of the only ones to win a trophy or reward. They are often very motivated to “beat the game” and move on. In the classroom, Achievers are often most concerned with grades as a measure of their achievement. They are often detail-oriented and want to know the quickest, fastest, or shortest way to the prize. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -707,7 +713,7 @@ NSMutableArray *answerTypes;
     
     else if ([[stdDefaults objectForKey:@"Biggest Trait"] isEqual:@"SK"]){
         self.mainTitleLabel.text = @"Socializer-Griefer";
-        self.quizScrollingDescriptionLabel.text = @"You combine both the characteristics of a Socializer and those of a Griefer. Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
+        descString = @"You combine both the characteristics of a Socializer and those of a Griefer. Socializers are motivated by the desire to form meaningful connections and relationships with others. Socializers are often the connectors, who help to form questing parties and seem to know everyone online at any given moment. Socializers often form clans, which are groups of like-minded gamers, and when a particular game gets old, Socializers will simply switch games, keeping the clan intact. The game is simply a backdrop for the chatting and interactions that are the true draw. Socializers judge their accomplishments by how many friends, or how many followers they have. In the online gaming world, Griefers willfully damage and vandalize other people’s creations. They take pleasure in the turmoil they cause in the game world, and in the damage they wreak on others. In the classroom, those students often are the first ones to see if they can hack the system, and are often willfully oblivious to the consequences to the community. However, Griefers are often great risk-takers, and are used to repeatedly starting over with nothing — because they’re always being killed — and who don’t mind being wrong. They are likely to have a growth mindset, rather than a fixed one, and if they can be drawn into the classroom community, they can have a positive influence on others.";
         self.initialScrollingDescriptionLabel.text=@" ";
         [_startQuizLabel setTitle:@"Take the Test Again" forState:UIControlStateNormal];
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
@@ -719,7 +725,7 @@ NSMutableArray *answerTypes;
     else{
         self.mainTitleLabel.text = @"The Bartle Test";
         self.quizScrollingDescriptionLabel.text=@" ";
-        self.initialScrollingDescriptionLabel.text = @"The Bartle Test of Gamer Psychology is an online multiple choice test. The test is based on how students play games and only takes a few minutes. Students fall into one or more of four categories: Socializer, Achiever, Explorer, or Griefer. I use these results to inform how I make groups and how I ask kids to collaborate. It offers useful insight into how students will react in different situations, and also provides a starting point for me at the beginning of the semester. Try it yourself, and see what insights it gives you into how best to engage your students.";
+        descString = @"The Bartle Test of Gamer Psychology is an online multiple choice test. The test is based on how students play games and only takes a few minutes. Students fall into one or more of four categories: Socializer, Achiever, Explorer, or Griefer. I use these results to inform how I make groups and how I ask kids to collaborate. It offers useful insight into how students will react in different situations, and also provides a starting point for me at the beginning of the semester. Try it yourself, and see what insights it gives you into how best to engage your students.";
         self.sideIcon.image = [UIImage imageNamed:@"blank.png"];
         [_startQuizLabel setTitle:@"Take the Test" forState:UIControlStateNormal];
         
@@ -729,6 +735,8 @@ NSMutableArray *answerTypes;
         self.kiPercentLabel.text = @" ";
         
     }
+    
+    self.quizScrollingDescriptionLabel.text = descString;
     
     
     [self prepQuestion];
@@ -758,29 +766,34 @@ NSMutableArray *answerTypes;
     
     float totalQ = [[NSNumber numberWithFloat:[questions count]-1]floatValue]/2;
     
+    
     float frac = [[stdDefaults objectForKey:@"ExploreNum"] floatValue]/totalQ;
     [self.exBar setProgress:frac animated:YES];
     float perc = frac*100+.5;
     int intPerc = perc;
-    self.exPercentLabel.text = [[@"Explorer - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    exPer = [[@"Explorer - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    self.exPercentLabel.text=exPer;
     
     frac = [[stdDefaults objectForKey:@"AchieveNum"] floatValue]/totalQ;
     [self.acBar setProgress:frac animated:YES];
     perc = frac*100+.5;
     intPerc = perc;
-    self.acPercentLabel.text = [[@"Achiever - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    acPer=[[@"Achiever - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    self.acPercentLabel.text = acPer;
     
     frac = [[stdDefaults objectForKey:@"SocialNum"] floatValue]/totalQ;
     [self.socBar setProgress:frac animated:YES];
     perc = frac*100+.5;
     intPerc = perc;
-    self.soPercentLabel.text = [[@"Socializer - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    soPer = [[@"Socializer - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    self.soPercentLabel.text = soPer;
     
-    frac = [[stdDefaults objectForKey:@"KillNum"] floatValue]/totalQ;
+    frac = [[stdDefaults objectForKey:@"GrfNum"] floatValue]/totalQ;
     [self.kiBar setProgress:frac animated:YES];
     perc = frac*100+.5;
     intPerc = perc;
-    self.kiPercentLabel.text = [[@"Griefer - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    grPer = [[@"Griefer - " stringByAppendingString:[NSString stringWithFormat:@"%i",intPerc]] stringByAppendingString:@"%"];
+    self.kiPercentLabel.text=grPer;
     
 }
 
@@ -796,7 +809,7 @@ NSMutableArray *answerTypes;
         [stdDefaults setObject:0 forKey:@"ExploreNum"];
         [stdDefaults setObject:0 forKey:@"AchieveNum"];
         [stdDefaults setObject:0 forKey:@"SocialNum"];
-        [stdDefaults setObject:0 forKey:@"KillNum"];
+        [stdDefaults setObject:0 forKey:@"GrfNum"];
         [stdDefaults setObject:@"NA" forKey:@"Biggest Trait"];
         [stdDefaults synchronize];
     }
@@ -945,10 +958,19 @@ NSMutableArray *answerTypes;
     }
     
     NSString *URLtemp = @"mailto:?cc=&subject=";
+    
     NSString *subjectTemp = @"I am ";
     NSString *subjectString = [subjectTemp stringByAppendingString:type];
     NSString *subjectStringWithPercentEscapes = [subjectString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
     NSString *urlSt = [URLtemp stringByAppendingString:subjectStringWithPercentEscapes];
+    urlSt = [urlSt stringByAppendingString:@"&body="];
+    
+    NSString *emailContent = [NSString stringWithFormat:@"%@ \n \n %@\n%@\n%@\n%@",descString,exPer,acPer,soPer,grPer];
+    NSString *contentWithPercentEscapes = [emailContent stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    urlSt = [urlSt stringByAppendingString:contentWithPercentEscapes];
+    
     NSURL *mailURL = [NSURL URLWithString:urlSt];
     [[UIApplication sharedApplication] openURL:mailURL];
 }
